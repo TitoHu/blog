@@ -1,11 +1,12 @@
 language: node_js
 node_js:
   - "8"
-script: npm build
+script: npm run build
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: $GITHUB_TOKEN
+  github_token: ece901a4d7301de94264d9d1ec939efb1fc3b34b
   keep_history: true
   on:
-    branch: gh-pages
+    branch: master
+  target_branch: gh-pages
