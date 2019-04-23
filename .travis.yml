@@ -3,13 +3,15 @@ language: node_js
 node_js:
   - "8"
 
+cache: npm
+
 script:
   - npm run build
 
 deploy:
   provider: pages
   skip_cleanup: true
-  github_token: ba4da0726fcb8502b25c2a5bb1306bf6411fcaac
+  github_token: $GITHUB_TOKEN
   local_dir: book
   on:
     branch: master
