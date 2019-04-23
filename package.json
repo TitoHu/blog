@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "serve": "gitbook serve --port 4000",
+    "serve": "gitbook serve . ./book --port 4000",
     "build": "gitbook build . ./book",
     "kill": "kill -9 $(lsof -i:4000 |grep 'node'|awk '{print $2}')",
     "help": "gitbook help"
