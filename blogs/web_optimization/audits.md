@@ -8,6 +8,6 @@ Performance 方面主要是针对网页的性能，包活网页的加载时间�
 从6个方面对网页做计时，它们分别是：First Contentful Paint（FCP/首次内容渲染时间）、First Meaningful Paint（FMP/首次有效渲染时间）、Speed Index（速度指标）、First CPU Idle（）、Time to Interactive（可互动时间）和 Estimated Input Latency（估计输入延迟）。
 
 #### First Contentful Paint
-[First Contentful Paint](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint) 指的是从导航栏到浏览器渲染 DOM 中的第一个 bit 的时间。
+[First Contentful Paint](https://developers.google.com/web/tools/lighthouse/audits/first-contentful-paint) 指的是从导航到网页开始到浏览器渲染 DOM 中的第一个 bit 的时间。
 
 待续...
