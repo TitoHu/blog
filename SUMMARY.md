@@ -5,5 +5,9 @@
 * [小技巧]()
   * [路由变更页面不刷新](blogs/skill/no_refresh_page.md)
 
-* [网页优化]()
-  * [Chrome Audits 工具](blogs/web_optimization/audits.md)
+* [Audits](blogs/audits/readme.md)
+  * [Performance](blogs/audits/performance.md)
+  * [Progressive Web App](blogs/audits/progressive_web_app.md)
+  * [Accessibility](blogs/audits/accessibility.md)
+  * [Best Practices](blogs/audits/best_practices.md)
+  * [SEO](blogs/audits/seo.md)
