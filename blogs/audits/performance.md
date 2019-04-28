@@ -306,4 +306,38 @@ User Timing Api 允许我们统计应用中 JavaScript 的性能。基本的原�
 这个审计并不是一中“通过”或“失败”。
 更多内容见 [User Timing Api](https://www.html5rocks.com/en/tutorials/webperformance/usertiming/)。
 
+## Use An Excessive DOM Size
+
+### 简介
+一个大型的 DOM 树会损害页面的性能：
+  - 网络效率和加载性能。如果服务端发送了一个大型的 DOM 树，那么会发送大量无用的字节。这也会延缓页面加载时间，因为浏览器或许要解析大量的节点。
+  - 运行时性能。当页面中用户和脚本交互的时候，浏览器需要重新计算节点的位置和样式，一个大型的 DOM 树以及样式会严重的影响到页面的渲染。
+  - 内存性能。当我们通常的查询一个节点的时候```document.querySelectorAll('li')```，会在毫不知情的情况下引用到一个大型的节点，会占用设备大量的内存。
+
+### 优化
+最佳的 DOM 树：
+ - 总共有少于1500个节点。
+ - 最大深度为32的节点。
+ - 没有拥有超过60个子节点的父元素。
+通常情况下，寻找一种当我们需要的时候创建节点，当我们不需要的时候删除节点的方式。
+
+## Uses inefficient cache policy on static assets
+
+### 简介
+HTTP 缓存可以加速页面加载时间当重复访问的时候。
+当浏览器请求一个资源，服务端提供的资源可以告诉浏览器这个资源应该被暂时的存储或者缓存多长时间。之后任何关于这个资源的请求，浏览器都会使用它的本地备份来替代从网络中再次获取它。
+
+### 优化
+配置服务端返回的 HTTP 响应头```Cache-Control```
+```
+Cache-Control: max-age=31536000
+```
+```max-age```指令告诉浏览器资源需要缓存多少秒。```31536000```等于1年：60秒 * 60分钟 * 24小时 * 365天 = 31536000秒
+如果资源更改和新鲜度很重要，则使用```no-cache```，但仍然希望缓存带来的一些速度优势。浏览器会缓存这些设置```no-cache```的资源，但是首先会检查服务端确保这些资源仍然是最新的。
+有很多中指令来自定义浏览器缓存不同的资源。
+ - [Defining optimal Cache-Control policy](https://developers.google.com/web/fundamentals/performance/optimizing-content-efficiency/http-caching#defining_optimal_cache-control_policy)
+ - [Cache-Control specification](https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.9)
+ - [Cache-Control (MDN)](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control)
+Chrome从内存缓存中提供最多请求的资源，速度很快，但是当浏览器关闭的时候会被清空
+
 [CRP](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/)
