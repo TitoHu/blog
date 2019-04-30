@@ -11,3 +11,4 @@
   * [Accessibility](blogs/audits/accessibility.md)
   * [Best Practices](blogs/audits/best_practices.md)
   * [SEO](blogs/audits/seo.md)
+  * [总结](blogs/audits/summary.md)

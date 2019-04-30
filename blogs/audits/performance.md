@@ -1,10 +1,10 @@
-# Performance 性能
-Performance 介绍了和网页性能相关的指标和技术点，通过这些技术点和指标，我们可以对网页进行优化，从而给用户带来更好的体验。
+# Performance
+Performance 方面中的各项审查点都是针对网页性能的，比如影响网页加载速度的几个点，影响网页交互速度的几个点等等。
 
-## Critical Request Chain 关键请求链
+## Critical Request Chain
 
 ### 简介
-Critical Request Chain 是 [Critical Rendering Path][CRP](CRP/关键渲染路径)优化策略中的一个概念。CRP 能够让浏览器确定加载哪个资源和确定资源加载的顺序，从而更快的加载一个页面。
+Critical Request Chain (关键请求链) 是 [Critical Rendering Path][CRP](CRP/关键渲染路径)优化策略中的一个概念。CRP 能够让浏览器确定加载哪个资源和确定资源加载的顺序，从而更快的加载一个页面。
 
 ### 优化
 通过 Lighthouse，会生成一个类似以下内容的图表：

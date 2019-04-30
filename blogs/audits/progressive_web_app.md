@@ -1,5 +1,5 @@
 # Progressive Web App
-渐进式网络应用
+渐进式网络应用是一种新的特性，通过这一特性可以给用户带来更原生化的体验。
 
 ## Address Bar Matches Brand Colors
 

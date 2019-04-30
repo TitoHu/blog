@@ -1,5 +1,5 @@
 # Accessibility
-无障碍
+Accessibility (无障碍) 方面中的各项审核点能够让网页给有视觉障碍的用户带来更好的用户体验，部分用户可能会使用特殊的浏览器来访问网页，从而展示的内容也和通用的浏览器展示的内容有所不同。
 
 ## Buttons Have An Accessible Name
 
