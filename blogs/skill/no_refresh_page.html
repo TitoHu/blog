@@ -1,0 +1,363 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>路由变更页面不刷新 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../audits/" />
+    
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    小技巧
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.2.1" data-path="no_refresh_page.html">
+            
+                <a href="no_refresh_page.html">
+            
+                    
+                    路由变更页面不刷新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../audits/">
+            
+                <a href="../audits/">
+            
+                    
+                    Audits
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../audits/performance.html">
+            
+                <a href="../audits/performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../audits/progressive_web_app.html">
+            
+                <a href="../audits/progressive_web_app.html">
+            
+                    
+                    Progressive Web App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../audits/accessibility.html">
+            
+                <a href="../audits/accessibility.html">
+            
+                    
+                    Accessibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../audits/best_practices.html">
+            
+                <a href="../audits/best_practices.html">
+            
+                    
+                    Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../audits/seo.html">
+            
+                <a href="../audits/seo.html">
+            
+                    
+                    SEO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../audits/summary.html">
+            
+                <a href="../audits/summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >路由变更页面不刷新</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x8DEF;&#x7531;&#x53D8;&#x66F4;&#x9875;&#x9762;&#x4E0D;&#x5237;&#x65B0;">&#x8DEF;&#x7531;&#x53D8;&#x66F4;&#x9875;&#x9762;&#x4E0D;&#x5237;&#x65B0;</h1>
+<h2 id="&#x80CC;&#x666F;">&#x80CC;&#x666F;</h2>
+<p>&#x6709;<code>A</code>&#xFF0C;<code>B</code>&#x548C;<code>C</code>&#x4E09;&#x4E2A;&#x9875;&#x9762;&#xFF0C;&#x901A;&#x8FC7;<code>A</code>&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x8DF3;&#x8F6C;&#x5230;<code>B</code>&#x9875;&#x9762;&#xFF0C;<code>B</code>&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x8DF3;&#x8F6C;&#x5230;<code>C</code>&#x9875;&#x9762;&#xFF0C;&#x540C;&#x65F6;<code>B</code>&#x9875;&#x9762;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x5207;&#x6362;tab&#x7684;&#x9875;&#x9762;&#xFF0C;tab&#x6709;<code>x</code>&#xFF0C;<code>y</code>&#x548C;<code>z</code>&#x4E09;&#x4E2A;&#xFF0C;<code>B</code>&#x9875;&#x9762;&#x6253;&#x5F00;&#x65F6;&#x9ED8;&#x8BA4;&#x5C55;&#x793A;<code>x</code>tab&#xFF0C;tab&#x4E4B;&#x95F4;&#x7684;&#x5207;&#x6362;&#x4E0D;&#x4F1A;&#x5207;&#x6362;&#x94FE;&#x63A5;&#x3002;&#x5728;&#x7528;&#x6237;&#x5B9E;&#x9645;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<ol>
+<li><code>A</code>-&gt;<code>Bx</code>-&gt;<code>C</code></li>
+<li><code>A</code>-&gt;<code>Bx</code>-&gt;<code>Bz</code>-&gt;<code>C</code></li>
+</ol>
+<p>&#x5F53;&#x8FD4;&#x56DE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5206;&#x522B;&#x662F;&#x4EE5;&#x4E0B;&#x4E24;&#x79CD;&#x60C5;&#x51B5;&#xFF1A;</p>
+<ol>
+<li><code>C</code>-&gt;<code>Bx</code>-&gt;<code>A</code></li>
+<li><code>C</code>-&gt;<code>Bx</code>-&gt;<code>A</code></li>
+</ol>
+<p>&#x7B2C;&#x4E00;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x4EA4;&#x4E92;&#x662F;&#x6B63;&#x5E38;&#x7684;&#xFF0C;&#x4F46;&#x662F;&#x7B2C;&#x4E8C;&#x79CD;&#x60C5;&#x51B5;&#x7684;&#x4EA4;&#x4E92;&#x5C31;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x4E0D;&#x592A;&#x53CB;&#x597D;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x80FD;&#x5E0C;&#x671B;&#x8FD4;&#x56DE;&#x5230;<code>Bz</code>&#xFF0C;&#x4F46;&#x662F;&#x76F4;&#x63A5;&#x8FD4;&#x56DE;&#x5230;&#x4E86;<code>Bx</code>&#xFF0C;&#x5728;<code>Bx</code>&#x4E0B;&#x8FD8;&#x8981;&#x591A;&#x4E00;&#x6B21;&#x64CD;&#x4F5C;&#x624D;&#x80FD;&#x5207;&#x6362;&#x5230;<code>Bz</code>&#x3002;&#x6B64;&#x65F6;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5728;&#x7B2C;&#x4E8C;&#x79CD;&#x60C5;&#x51B5;&#x4E0B;&#x8FD4;&#x56DE;&#x5E94;&#x8BE5;&#x662F;<code>C</code>-&gt;<code>Bz</code>-&gt;<code>A</code>&#x8FD9;&#x6837;&#x7684;&#x5448;&#x73B0;&#x65B9;&#x5F0F;&#xFF0C;&#x90A3;&#x4E48;&#x5982;&#x4F55;&#x624D;&#x80FD;&#x5B9E;&#x73B0;&#x8FD9;&#x6837;&#x7684;&#x529F;&#x80FD;&#x5462;&#xFF1F;</p>
+<h2 id="&#x601D;&#x8DEF;">&#x601D;&#x8DEF;</h2>
+<p>&#x6D4F;&#x89C8;&#x5668;&#x4F1A;&#x8BB0;&#x5F55;&#x6D4F;&#x89C8;&#x5668;tab&#x7684;&#x8BBF;&#x95EE;&#x8BB0;&#x5F55;&#xFF0C;&#x4F5C;&#x4E3A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#xFF0C;&#x7C7B;&#x4F3C;&#x4E8E;&#x6808;&#x7684;&#x65B9;&#x5F0F;&#x5B58;&#x50A8;&#x3002;&#x5F53;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A;&#x94FE;&#x63A5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x5C06;&#x8FD9;&#x4E2A;&#x94FE;&#x63A5;&#x538B;&#x5165;&#x6808;&#x4E2D;&#xFF0C;&#x5F53;&#x94FE;&#x63A5;&#x53D8;&#x5316;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x628A;&#x65B0;&#x7684;&#x94FE;&#x63A5;&#x538B;&#x5165;&#x6808;&#x4E2D;&#xFF0C;&#x540C;&#x65F6;&#x9875;&#x9762;&#x663E;&#x793A;&#x65B0;&#x94FE;&#x63A5;&#x7684;&#x5185;&#x5BB9;&#x3002;&#x5F53;&#x8FD4;&#x56DE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x5C06;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#x6700;&#x540E;&#x8BB0;&#x5F55;&#x7684;&#x53D6;&#x51FA;&#xFF0C;&#x505A;&#x51FA;&#x6808;&#x64CD;&#x4F5C;&#xFF0C;&#x7136;&#x540E;&#x663E;&#x793A;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x6808;&#x4E2D;&#x6700;&#x540E;&#x8BB0;&#x5F55;&#x7684;&#x94FE;&#x63A5;&#x5185;&#x5BB9;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x8981;&#x4FEE;&#x6539;&#x9875;&#x9762;&#x8FD4;&#x56DE;&#x65F6;&#x5019;&#x7684;&#x663E;&#x793A;&#x987A;&#x5E8F;&#xFF0C;&#x5C31;&#x8981;&#x5728;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E0A;&#x9762;&#x505A;&#x4E00;&#x4E9B;&#x64CD;&#x4F5C;&#x3002;
+&#x5728;&#x7B2C;&#x4E8C;&#x79CD;&#x60C5;&#x51B5;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x6700;&#x7EC8;&#x8FD4;&#x56DE;&#x7684;&#x987A;&#x5E8F;&#x662F;<code>C</code>-&gt;<code>Bz</code>-&gt;<code>A</code>&#xFF0C;&#x90A3;&#x4E48;&#x5728;&#x6700;&#x7EC8;&#x663E;&#x793A;C&#x9875;&#x9762;&#x5185;&#x5BB9;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#x94FE;&#x63A5;&#x5B58;&#x653E;&#x7684;&#x60C5;&#x51B5;&#x5E94;&#x8BE5;&#x662F;<code>&#x6808;&#x5E95;</code>-&gt;<code>A</code>-&gt;<code>Bz</code>-&gt;<code>C</code>&#x3002;&#x8FD9;&#x6837;&#x5728;<code>C</code>&#x9875;&#x9762;&#x8FD4;&#x56DE;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x80FD;&#x591F;&#x6309;&#x7167;&#x8BBE;&#x60F3;&#x7684;&#x987A;&#x5E8F;&#x8FD4;&#x56DE;&#x4E86;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x7531;&#x4E8E;<code>B</code>&#x9875;&#x9762;&#x9ED8;&#x8BA4;&#x5C55;&#x793A;<code>x</code>tab&#xFF0C;&#x6240;&#x4EE5;&#x8FD8;&#x8981;&#x5BF9;<code>B</code>&#x9875;&#x9762;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x4F7F;&#x5F97;<code>B</code>&#x9875;&#x9762;&#x80FD;&#x591F;&#x9ED8;&#x8BA4;&#x663E;&#x793A;<code>z</code>tab&#x3002;
+&#x5728;&#x9ED8;&#x8BA4;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;<code>Bx</code>-&gt;<code>Bz</code>&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x7531;&#x4E8E;&#x4E0D;&#x4F1A;&#x5207;&#x6362;&#x94FE;&#x63A5;&#xFF0C;&#x53EA;&#x662F;&#x9875;&#x9762;&#x5185;&#x7684;&#x53D8;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x5E76;&#x4E0D;&#x4F1A;&#x5C06;<code>Bz</code>&#x8BB0;&#x5F55;&#x5728;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#xFF0C;&#x540C;&#x65F6;&#x8FDB;&#x5165;<code>B</code>&#x9875;&#x9762;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x4F1A;&#x9ED8;&#x8BA4;&#x7684;&#x5C06;<code>Bx</code>&#x8BB0;&#x5F55;&#x5728;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#x3002;&#x90A3;&#x4E48;&#x60F3;&#x8981;&#x505A;&#x6210;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x7684;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x987A;&#x5E8F;&#xFF0C;&#x5C31;&#x9700;&#x8981;&#x5728;<code>B</code>&#x9875;&#x9762;&#x5207;&#x6362;tab&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x66FF;&#x6362;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#x8BB0;&#x5F55;&#x7684;B&#x7684;&#x94FE;&#x63A5;&#x3002;
+&#x6574;&#x7406;&#x4E00;&#x4E0B;&#x4E0A;&#x9762;&#x7684;&#x601D;&#x8DEF;&#x53D1;&#x73B0;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x6700;&#x7EC8;&#x89E3;&#x51B3;&#x95EE;&#x9898;&#xFF0C;&#x5C31;&#x8981;&#x89E3;&#x51B3;&#x4EE5;&#x4E0B;&#x8FD9;&#x4E24;&#x4E2A;&#x5173;&#x952E;&#x70B9;&#xFF1A;</p>
+<ol>
+<li>&#x80FD;&#x591F;&#x63A7;&#x5236;<code>B</code>&#x9875;&#x9762;&#x9ED8;&#x8BA4;&#x5C55;&#x793A;&#x4E0D;&#x540C;&#x7684;tab&#x3002;</li>
+<li><code>B</code>&#x9875;&#x9762;&#x5207;&#x6362;tab&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x66FF;&#x6362;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;</li>
+</ol>
+<h2 id="&#x89E3;&#x51B3;&#x65B9;&#x6848;">&#x89E3;&#x51B3;&#x65B9;&#x6848;</h2>
+<h4 id="&#x63A7;&#x5236;b&#x9875;&#x9762;&#x9ED8;&#x8BA4;&#x5C55;&#x793A;&#x7684;tab">&#x63A7;&#x5236;<code>B</code>&#x9875;&#x9762;&#x9ED8;&#x8BA4;&#x5C55;&#x793A;&#x7684;tab</h4>
+<p>&#x63A7;&#x5236;<code>B</code>&#x9875;&#x9762;&#x9ED8;&#x8BA4;&#x5C55;&#x793A;&#x7684;tab&#x5F88;&#x7B80;&#x5355;&#xFF0C;&#x5728;&#x9875;&#x9762;<code>B</code>&#x7684;&#x94FE;&#x63A5;&#x4E2D;&#x6DFB;&#x52A0;&#x6761;&#x4EF6;&#x6765;&#x63A7;&#x5236;&#x9875;&#x9762;&#x9ED8;&#x8BA4;&#x5C55;&#x793A;&#x7684;tab&#x3002;</p>
+<h4 id="b&#x9875;&#x9762;&#x5207;&#x6362;tab&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x66FF;&#x6362;&#x5386;&#x53F2;&#x8BB0;&#x5F55;"><code>B</code>&#x9875;&#x9762;&#x5207;&#x6362;tab&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x66FF;&#x6362;&#x5386;&#x53F2;&#x8BB0;&#x5F55;</h4>
+<p>&#x5F53;&#x9875;&#x9762;&#x94FE;&#x63A5;&#x5207;&#x6362;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x5C31;&#x4F1A;&#x5C06;&#x94FE;&#x63A5;&#x8BB0;&#x5F55;&#x5230;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x5207;&#x6362;tab&#x7684;&#x65F6;&#x5019;&#x5C31;&#x9700;&#x8981;&#x6539;&#x53D8;&#x94FE;&#x63A5;&#x3002;&#x901A;&#x8FC7;<code>window.location.replace(url)</code>&#x53EF;&#x4EE5;&#x66FF;&#x6362;&#x5F53;&#x524D;&#x7684;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#xFF0C;&#x540C;&#x65F6;&#x6539;&#x53D8;&#x9875;&#x9762;&#x7684;&#x94FE;&#x63A5;&#xFF0C;&#x5C31;&#x80FD;&#x591F;&#x89E3;&#x51B3;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x3002;&#x4F46;&#x662F;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x5728;&#x66FF;&#x6362;&#x4E86;&#x94FE;&#x63A5;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x9875;&#x9762;&#x4E5F;&#x4F1A;&#x968F;&#x7740;&#x5237;&#x65B0;&#x3002;&#x5BF9;&#x4E8E;&#x9875;&#x9762;<code>B</code>&#x6765;&#x8BB2;&#xFF0C;&#x53EA;&#x662F;&#x7B80;&#x7B80;&#x5355;&#x5355;&#x7684;&#x9875;&#x9762;&#x5185;&#x7684;tab&#x5207;&#x6362;&#xFF0C;&#x5982;&#x679C;&#x8981;&#x505A;&#x6210;&#x5237;&#x65B0;&#x9875;&#x9762;&#x7684;&#x8BDD;&#xFF0C;&#x5C31;&#x4F1A;&#x4F7F;&#x7528;&#x6237;&#x7684;&#x4F53;&#x9A8C;&#x53D8;&#x5F97;&#x5F88;&#x5DEE;&#x3002;&#x90A3;&#x4E48;&#x6709;&#x6CA1;&#x6709;&#x4E00;&#x79CD;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x65E2;&#x66FF;&#x6362;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#xFF0C;&#x53C8;&#x6539;&#x53D8;&#x94FE;&#x63A5;&#xFF0C;&#x540C;&#x65F6;&#x4E0D;&#x4F1A;&#x5237;&#x65B0;&#x9875;&#x9762;&#xFF1F;
+&#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#x6709;&#x4E00;&#x4E2A;&#x65B9;&#x6CD5;&#x53EF;&#x4EE5;&#x6EE1;&#x8DB3;&#x4E0A;&#x8FF0;&#x7684;&#x5185;&#x5BB9;&#xFF0C;&#x5C31;&#x662F;<code>history.replaceState(state, title, url)</code>&#x53C2;&#x6570;<code>state</code>&#x662F;&#x94FE;&#x63A5;&#x76F8;&#x5173;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x8C61;&#xFF0C;<code>title</code>&#x662F;&#x6807;&#x9898;&#xFF0C;<code>url</code>&#x662F;&#x94FE;&#x63A5;&#x3002;&#x901A;&#x8FC7;&#x4E0A;&#x8FF0;&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x5C31;&#x80FD;&#x5728;&#x4E0D;&#x5237;&#x65B0;&#x9875;&#x9762;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x66FF;&#x6362;&#x5386;&#x53F2;&#x8BB0;&#x5F55;&#x3002;&#x4F46;&#x662F;&#x7531;&#x4E8E;&#x8FD9;&#x4E2A;API&#x53EA;&#x6709;&#x90E8;&#x5206;&#x6D4F;&#x89C8;&#x5668;&#x652F;&#x6301;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x4F7F;&#x7528;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x5148;&#x5224;&#x65AD;&#x8BE5;API&#x662F;&#x5426;&#x80FD;&#x591F;&#x4F7F;&#x7528;&#xFF1A;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">if</span> (<span class="hljs-built_in">window</span>.history &amp;&amp; <span class="hljs-built_in">window</span>.history.replaceState) {
+  <span class="hljs-comment">// do something here</span>
+}
+</code></pre>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x5BF9;&#x4E8E;&#x672C;&#x6B21;&#x7684;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#xFF0C;&#x4E3B;&#x8981;&#x6709;&#x4EE5;&#x4E0B;&#x51E0;&#x70B9;&#xFF0C;&#x4E00;&#x662F;&#x4F7F;&#x5F97;<code>B</code>&#x9875;&#x9762;&#x7684;&#x94FE;&#x63A5;&#x80FD;&#x591F;&#x63A7;&#x5236;<code>B</code>&#x9875;&#x9762;&#x9ED8;&#x8BA4;&#x663E;&#x793A;&#x7684;tab&#xFF0C;&#x4E8C;&#x662F;&#x5728;<code>B</code>&#x9875;&#x9762;&#x4E2D;&#x5207;&#x6362;tab&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528;<code>history.replaceState(state, title, url)</code>&#x7684;&#x65B9;&#x6CD5;&#xFF0C;&#x4E09;&#x662F;&#x5728;&#x4F7F;&#x7528;&#x65B9;&#x6CD5;&#x524D;&#x5224;&#x65AD;&#x65B9;&#x6CD5;&#x662F;&#x5426;&#x80FD;&#x5728;&#x6267;&#x884C;&#x73AF;&#x5883;&#x4E2D;&#x4F7F;&#x7528;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                
+                <a href="../audits/" class="navigation navigation-next navigation-unique" aria-label="Next page: Audits">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"路由变更页面不刷新","level":"1.2.1","depth":2,"next":{"title":"Audits","level":"1.3","depth":1,"path":"blogs/audits/README.md","ref":"blogs/audits/README.md","articles":[{"title":"Performance","level":"1.3.1","depth":2,"path":"blogs/audits/performance.md","ref":"blogs/audits/performance.md","articles":[]},{"title":"Progressive Web App","level":"1.3.2","depth":2,"path":"blogs/audits/progressive_web_app.md","ref":"blogs/audits/progressive_web_app.md","articles":[]},{"title":"Accessibility","level":"1.3.3","depth":2,"path":"blogs/audits/accessibility.md","ref":"blogs/audits/accessibility.md","articles":[]},{"title":"Best Practices","level":"1.3.4","depth":2,"path":"blogs/audits/best_practices.md","ref":"blogs/audits/best_practices.md","articles":[]},{"title":"SEO","level":"1.3.5","depth":2,"path":"blogs/audits/seo.md","ref":"blogs/audits/seo.md","articles":[]},{"title":"总结","level":"1.3.6","depth":2,"path":"blogs/audits/summary.md","ref":"blogs/audits/summary.md","articles":[]}]},"previous":{"title":"小技巧","level":"1.2","depth":1,"ref":"","articles":[{"title":"路由变更页面不刷新","level":"1.2.1","depth":2,"path":"blogs/skill/no_refresh_page.md","ref":"blogs/skill/no_refresh_page.md","articles":[]}]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{"maxIndexSize":1000000},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"blogs/skill/no_refresh_page.md","mtime":"2019-04-30T03:28:59.006Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-30T03:29:56.590Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

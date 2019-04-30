@@ -1,0 +1,341 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Audits · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="performance.html" />
+    
+    
+    <link rel="prev" href="../skill/no_refresh_page.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../">
+            
+                <a href="../../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" >
+            
+                <span>
+            
+                    
+                    小技巧
+            
+                </span>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../skill/no_refresh_page.html">
+            
+                <a href="../skill/no_refresh_page.html">
+            
+                    
+                    路由变更页面不刷新
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.3" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    Audits
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="performance.html">
+            
+                <a href="performance.html">
+            
+                    
+                    Performance
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="progressive_web_app.html">
+            
+                <a href="progressive_web_app.html">
+            
+                    
+                    Progressive Web App
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="accessibility.html">
+            
+                <a href="accessibility.html">
+            
+                    
+                    Accessibility
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="best_practices.html">
+            
+                <a href="best_practices.html">
+            
+                    
+                    Best Practices
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="seo.html">
+            
+                <a href="seo.html">
+            
+                    
+                    SEO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="summary.html">
+            
+                <a href="summary.html">
+            
+                    
+                    总结
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../.." >Audits</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="audits">Audits</h1>
+<h2 id="lighthouse">Lighthouse</h2>
+<p>Lighthouse &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x7684;&#xFF0C;&#x7528;&#x4E8E;&#x63D0;&#x5347;&#x9875;&#x9762;&#x8D28;&#x91CF;&#x7684;&#x81EA;&#x52A8;&#x5316;&#x5DE5;&#x5177;&#x3002;&#x5728; Chrome DevTool &#x4E2D;&#x53EF;&#x4EE5;&#x8FD0;&#x884C;&#x8FD9;&#x4E2A;&#x63D2;&#x4EF6;&#x6765;&#x5BA1;&#x67E5;&#x7F51;&#x9875;&#xFF0C;&#x7136;&#x540E;&#x6839;&#x636E;&#x5BA1;&#x67E5;&#x7684;&#x7ED3;&#x679C;&#x5BF9;&#x7F51;&#x9875;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x6700;&#x7EC8;&#x4F7F;&#x5F97;&#x9875;&#x9762;&#x80FD;&#x7ED9;&#x7528;&#x6237;&#x5E26;&#x6765;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x4F53;&#x9A8C;&#x3002;
+Lighthouse &#x4E3B;&#x8981;&#x4ECE;5&#x4E2A;&#x65B9;&#x9762;&#x5BF9;&#x7F51;&#x9875;&#x8FDB;&#x884C;&#x5BA1;&#x67E5;&#xFF0C;&#x5B83;&#x4EEC;&#x5206;&#x522B;&#x662F;&#xFF1A;Performance&#x3001;Porgressive Web App&#x3001;Best Practices&#x3001;Accessibility &#x548C; SEO&#x3002;&#x6BCF;&#x4E2A;&#x65B9;&#x9762;&#x90FD;&#x6709;&#x82E5;&#x5E72;&#x4E2A;&#x5F88;&#x7EC6;&#x8282;&#x7684;&#x5BA1;&#x67E5;&#x70B9;&#x3002;&#x5BA1;&#x67E5;&#x65F6;&#x4F1A;&#x9010;&#x4E00;&#x7684;&#x6821;&#x9A8C;&#x8FD9;&#x4E9B;&#x70B9;&#xFF0C;&#x6700;&#x7EC8;&#x6839;&#x636E;&#x6BCF;&#x4E2A;&#x70B9;&#x7684;&#x6821;&#x9A8C;&#x7ED3;&#x679C;&#x7ED9;&#x4E3B;&#x8981;&#x7684;5&#x4E2A;&#x5BA1;&#x67E5;&#x65B9;&#x9762;&#x4E00;&#x4E2A;&#x8BC4;&#x5206;&#xFF0C;&#x5E76;&#x4E14;&#x4F1A;&#x8BE6;&#x7EC6;&#x7684;&#x5217;&#x51FA;&#x5BA1;&#x67E5;&#x5931;&#x8D25;&#x7684;&#x70B9;&#x4EE5;&#x53CA;&#x6210;&#x529F;&#x7684;&#x70B9;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;">&#x4F7F;&#x7528;</h2>
+<p>&#x5728; Chrome &#x6D4F;&#x89C8;&#x5668;&#x4E2D;&#xFF0C;&#x9996;&#x5148;&#x8BBF;&#x95EE;&#x8981;&#x5BA1;&#x67E5;&#x7684;&#x7F51;&#x9875;&#xFF0C;&#x7136;&#x540E;&#x6253;&#x5F00;&#x5F00;&#x53D1;&#x8005;&#x8C03;&#x8BD5;&#x5DE5;&#x5177;&#x9009;&#x62E9; Audits &#x6807;&#x7B7E;&#xFF0C;&#x52FE;&#x9009;&#x4E00;&#x4E9B;&#x9009;&#x9879;&#x4E4B;&#x540E;&#x5C31;&#x53EF;&#x4EE5;&#x70B9;&#x51FB;<code>Run audits</code>&#x6309;&#x94AE;&#x5F00;&#x59CB;&#x5BA1;&#x67E5;&#x4E86;&#x3002;&#x5BA1;&#x67E5;&#x65F6;&#x9700;&#x8981;&#x79D1;&#x5B66;&#x4E0A;&#x7F51;&#xFF0C;&#x6240;&#x4EE5;&#x4F60;&#x61C2;&#x7684;&#x3002;</p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../skill/no_refresh_page.html" class="navigation navigation-prev " aria-label="Previous page: 路由变更页面不刷新">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="performance.html" class="navigation navigation-next " aria-label="Next page: Performance">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Audits","level":"1.3","depth":1,"next":{"title":"Performance","level":"1.3.1","depth":2,"path":"blogs/audits/performance.md","ref":"blogs/audits/performance.md","articles":[]},"previous":{"title":"路由变更页面不刷新","level":"1.2.1","depth":2,"path":"blogs/skill/no_refresh_page.md","ref":"blogs/skill/no_refresh_page.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{"maxIndexSize":1000000},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"blogs/audits/README.md","mtime":"2019-04-30T03:28:59.006Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-30T03:29:56.590Z"},"basePath":"../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../gitbook/gitbook.js"></script>
+    <script src="../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../gitbook/gitbook-plugin-fontsettings/buttons.js"></script>
+        
+    
+
+    </body>
+</html>
+

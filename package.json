@@ -1,0 +1,27 @@
+{
+  "name": "blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "gitbook serve . ./book --port 4000",
+    "build": "gitbook build . ./book",
+    "kill": "kill -9 $(lsof -i:4000 |grep 'node'|awk '{print $2}')",
+    "help": "gitbook help"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TitoHu/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/TitoHu/blog/issues"
+  },
+  "homepage": "https://github.com/TitoHu/blog#readme",
+  "dependencies": {
+    "gitbook": "^2.6.9",
+    "gitbook-cli": "^2.3.2"
+  }
+}
