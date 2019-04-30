@@ -5,7 +5,7 @@
 * [小技巧]()
   * [路由变更页面不刷新](blogs/skill/no_refresh_page.md)
 
-* [Audits](blogs/audits/readme.md)
+* [Audits](blogs/audits/README.md)
   * [Performance](blogs/audits/performance.md)
   * [Progressive Web App](blogs/audits/progressive_web_app.md)
   * [Accessibility](blogs/audits/accessibility.md)
